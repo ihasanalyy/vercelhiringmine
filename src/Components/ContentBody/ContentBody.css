@@ -1,0 +1,586 @@
+*{
+    background-color: #f4f2ff;
+}
+.content-body{
+    /* border: 1px solid black; */
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    line-height: 5em;
+}
+.content-body h1 {
+    font-size: 100px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: -.02em;
+    background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content-body p {
+    margin: 16px 0px 0px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.00938em;
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+}
+.SearchBox{
+    /* border: 1px solid black; */
+    width: 50%;
+    display: flex;
+    gap: 5px;
+    margin: 30px auto;
+}
+.SearchBox input{
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    border: 0px;
+    box-sizing: content-box;
+    background: none;
+    height: 1.4375em;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    min-width: 0px;
+    width: 100%;
+    animation-name: mui-auto-fill-cancel;
+    animation-duration: 10ms;
+    padding: 8.5px 0px 8.5px 14px;
+}
+.SearchBox button {
+    background-color: transparent;
+    border: none;
+}
+.Findjobs button {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    font-weight: 700;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 130px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: rgb(104, 81, 255);
+    text-transform: capitalize !important;
+    outline: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    margin: auto;
+    text-decoration: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 50px;
+    gap: 10px;
+    white-space: nowrap;
+    padding: 10px 24px;
+}
+.Btns{
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 16px;
+}
+.Btns button {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: rgb(104, 81, 255);
+    font-weight: 800;
+    -webkit-box-align: center;
+    align-items: center;
+    line-height: 16px;
+    text-transform: capitalize !important;
+    outline: 0px;
+    margin: 0px;
+    text-decoration: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* border-width: 1px; */
+    border-style: solid;
+    border-color: rgba(104, 81, 255, 0.5);
+    border-image: initial;
+    border-radius: 6px;
+    gap: 10px;
+    white-space: nowrap;
+    padding: 7px 10px;
+}
+.content-body h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: -.02em;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+img {
+    width: 100%;
+    overflow: hidden;
+
+}
+.quickStepCards{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.quickStepCards div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 200px;
+    width: 250px;
+    cursor: pointer;
+    /* margin: 20px auto; */
+
+}
+.quickStepCards div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+  } 
+.quickStepCards h1 {
+    color: #6952ff;
+}
+.StepMain{
+    text-align: center;
+    margin: 100px auto;
+    width: 80%;
+    /* border: 1px solid red; */
+    padding: 50px;
+    /* height: 100vh; */
+}
+.font-rise {
+    font-size: 48px;
+}
+.cartoonMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid #522fd4; */
+    gap: 10px;
+    width: 80%;
+    margin: 100px auto;
+}
+.cartoonMain h1 {
+    font-size: 48px;
+}
+.jobList{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.h1color {
+    color: #6952ff;
+}
+.quickJobCards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 20px auto;
+    gap: 10px;
+}
+.quickJobCards div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: white;
+    border-radius: 20px;
+    padding: 10px;
+    height: 200px;
+    width: 250px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.quickJobCards h1{
+    color: #6952ff;
+}
+.quickJobCards div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+
+}
+.quickJobMain{
+    text-align: center;
+    margin: 100px auto;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+.jobList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* border: 1px solid black; */
+    width: 100%;
+    margin: 20px auto;
+    gap: 10px;
+}
+.MainJobList{
+    margin: 100px auto;
+    width: 80%;
+    /* border: 1px solid red; */
+}
+.MainJobList h1 {
+    text-align: center;
+    font-size: 48px;
+}
+.jobList img {
+    /* width: 50px;
+    height: auto; */
+}
+.MainBox{
+    /* border: 1px solid red;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 300px;
+    /* width: 400px; */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px #0000001a;
+    cursor: pointer;
+}
+.FirstDiv{
+     /* border: 1px solid blue; */
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 90%;
+}
+.SecondDiv{
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+.FirstSub{
+    /* border: 1px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: flex-start;
+    gap: 15px;
+}
+.SecondSub{
+    /* border: 1px solid purple; */
+    width: 50px;
+}
+.MainSideBanner{
+     /* border: 1px solid orange; */
+     width: 80%;
+     height: 100%;
+     margin: 100px auto;
+     display: flex;
+     justify-content: space-between;
+}
+.SideBanner{
+    /* border: 1px solid black; */
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+.SideBannerImg{
+    /* border: 1px solid red; */
+    width: 400px;
+    /* height: 300px; */
+}
+.SideBannerImg img{
+    width: 100%;
+    /* height: 100%; */
+}
+.SideBannerContent{
+    /* border: 1px solid blue; */
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.SideBannerContent button {
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    user-select: none;
+    vertical-align: middle;
+    appearance: none;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    min-width: 64px;
+    color: rgb(104, 81, 255);
+    font-weight: 600;
+    -webkit-box-align: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 18px;
+    box-shadow: none !important;
+    outline: 0px;
+    margin: 0px;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(104, 81, 255, 0.5);
+    border-image: initial;
+    border-radius: 20px;
+    gap: 10px;
+    white-space: nowrap;
+}
+.SideBannerContent h1 {
+    letter-spacing: 0.5px;
+}
+.MainFooter{
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+    padding: 80px 0 50px;
+}
+
+.FooterRightDiv{
+    /* border: 1px solid red; */
+    /* background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%); */
+    background-color: transparent;
+    width: 30%;
+    height: 80%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+.FooterLeftDiv{
+    /* border: 1px solid blue; */
+    background-color: transparent;
+    width: 30%;
+    height: 20%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.FooterLeftDiv h5 {
+    background-color: transparent;
+    color: white;
+    font-size: large;
+}
+.FooterLeftDiv a {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+}
+.SubFooterRight1 img {
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+}
+.SubFooterRight2{
+    /* border: 1px solid purple; */
+    /* background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%); */
+    background-color: transparent;
+}
+.SubFooterRight2 h5 {
+    background-color: transparent;
+    /* background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%); */
+    color: white;
+    font-size: large;
+}
+.SubFooterRight1{
+    /* border: 1px solid orange; */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 80%;
+}
+.SubFooterRight1 p {
+    background-color: transparent;
+    color: white;
+}
+.SubFooterRight3 {
+    display: flex;
+    background-color: transparent;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.SubFooterRight3 div {
+    background-color: transparent;
+}
+.iconColor{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.endFooter{
+    border-top: 1px solid #e4e6eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(180deg, #6d5de9 0%, #9747ff 100%);
+}
+.endFooter p {
+    color: white;
+    background-color: transparent;
+}
+.terms a {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+.terms {
+    background-color: transparent;
+    display: flex;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .quickStepCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quickJobCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .jobList{
+        grid-template-columns: repeat(1, 1fr);
+        /* margin: 20px 100px; */
+    }
+    .MainSideBanner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .divGet{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 250px;
+        gap: 20px;
+    }
+    .SideBanner{
+        width: auto;
+    }
+    .FooterLeftDiv{
+        width: auto;
+        margin: auto;
+        text-align: center;
+    }
+    .MainFooter{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    .FooterRightDiv{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .SubFooterRight3{
+        justify-content: start;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) { /* Fixed the typo here */
+    .quickStepCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quickJobCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .jobList{
+        grid-template-columns: repeat(1, 1fr);
+        /* margin: 20px 100px; */
+    }
+    .Btns{
+        margin-top:  50px;
+        
+    }
+    .MainSideBanner{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        width: 100%;
+        justify-content: space-between;
+        margin: 20px;
+    }
+}
+
+
+
+
+

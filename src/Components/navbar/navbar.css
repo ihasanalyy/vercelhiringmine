@@ -1,0 +1,78 @@
+.mainNav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.mainNav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+.mainNav ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 500;
+    gap: 10px;
+    list-style: none;
+    width: 40%;
+}
+
+.mainNav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.mainNav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.mainNav button:hover {
+    color: #555;
+}
+
+/* Responsive Design */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mainNav ul {
+        display: none; /* Hide menu on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: tr;
+        width: 150px;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+
+    .mainNav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .menu-toggle {
+        display: block; /* Show the toggle button on small screens */
+        font-size: 1.5rem;
+        background: none;
+        border: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .mainNav ul li a {
+        color: black;
+    }
+    .leftBtns{
+        border: 1px solid red;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+        gap: 10px;
+    }
+}

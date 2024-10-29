@@ -1,0 +1,17 @@
+.filterMain{
+    /* border: 1px solid red; */
+    height: 100%;
+    padding: 0;
+}
+.filterMain select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #6952ff;
+    color: white;
+    border-radius: 20px;
+}
+.filterMain select option {
+    background-color: white;
+    color: black;
+}
