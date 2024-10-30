@@ -4,7 +4,7 @@
 .content-body{
     /* border: 1px solid black; */
     width: 60%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,7 +141,7 @@
 .content-body h3 {
     font-style: normal;
     font-weight: 800;
-    font-size: 30px;
+    /* font-size: 30px; */
     letter-spacing: -.02em;
     background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
     -webkit-background-clip: text;
@@ -188,10 +188,10 @@ img {
 }
 .StepMain{
     text-align: center;
-    margin: 100px auto;
+    margin: auto;
     width: 80%;
     /* border: 1px solid red; */
-    padding: 50px;
+    /* padding: 50px; */
     /* height: 100vh; */
 }
 .font-rise {
@@ -505,8 +505,27 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+    
     .quickStepCards {
         grid-template-columns: repeat(1, 1fr);
+        margin: 20px auto;
+    }
+    .quickStepCards div {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: transparent;
+        border: white;
+        border-radius: 20px;
+        padding: 10px;
+        height: 200px;
+        width: auto;
+        cursor: pointer;
+        /* margin: 20px auto; */
+    
     }
     .quickJobCards {
         grid-template-columns: repeat(1, 1fr);
@@ -519,11 +538,12 @@ img {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
+        margin: 20px auto;
     }
     .divGet{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        margin-top: 250px;
+        /* margin-top: 250px; */
         gap: 20px;
     }
     .SideBanner{
@@ -553,11 +573,41 @@ img {
         justify-content: start;
         gap: 20px;
     }
+    .SideBannerContent{
+        /* border: 1px solid blue; */
+        /* width: 400px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .SideBannerImg{
+        width: auto;
+    }
+    
 }
 
 @media only screen and (max-width: 480px) { /* Fixed the typo here */
     .quickStepCards {
         grid-template-columns: repeat(1, 1fr);
+        margin: 20px auto;
+    }
+    .quickStepCards div {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: transparent;
+        border: white;
+        border-radius: 20px;
+        padding: 10px;
+        height: 200px;
+        width: auto;
+        cursor: pointer;
+        /* margin: 20px auto; */
+    
     }
     .quickJobCards {
         grid-template-columns: repeat(1, 1fr);
@@ -567,16 +617,47 @@ img {
         /* margin: 20px 100px; */
     }
     .Btns{
-        margin-top:  50px;
-        
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 16px;
+    }
+   
+    .SearchBox{
+        /* border: 1px solid black; */
+        width: 100%;
+        display: flex;
+        gap: 5px;
+        margin: 30px auto;
     }
     .MainSideBanner{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
-        width: 100%;
+        width: 80%;
         justify-content: space-between;
-        margin: 20px;
+        margin: 20px auto;
+        /* border: 1px solid yellow; */
+    }
+    .SideBannerContent{
+        /* border: 1px solid blue; */
+        /* width: 400px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        /* border: solid; */
+        /* width: 80%; */
+        width: auto;
+    }
+    .SideBanner{
+        width: auto;
+        /* border: 1px solid red; */
+    }
+    .SideBannerImg{
+        width: auto;
     }
 }
 

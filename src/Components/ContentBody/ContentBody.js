@@ -89,7 +89,9 @@ const ContentBody = () => {
                     <button>Writer</button>
                 </div>
             </div>
+            <div>
             <img src={banner} alt='Banner Image' />
+            </div>
             <div className='StepMain'>
                 <div className='divGet'>
                     <h1 className='font-rise'>Get Hired In 4 <span className='h1color'> Quick Easy Steps Coming Soon </span></h1>
